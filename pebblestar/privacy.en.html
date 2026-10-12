@@ -43,7 +43,7 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 <li>To keep the game free, we show <strong>Google AdMob ads</strong>. To deliver them, Google receives some device information directly.</li>
 <li><strong>Personalized ads are shown only to users 18 and over.</strong> For users under 14, no advertising ID is sent and personalized ads are off.</li>
 <li>Purchases are handled by <strong>the Apple and Google stores</strong>. We never receive your card details.</li>
-<li>No analytics or crash-reporting tools. Notifications are scheduled on the device.</li>
+<li>We haven't added any analytics or crash-reporting tools. The game engine (Unity) does send anonymous device-spec statistics to Unity (1.5). Notifications are scheduled on the device.</li>
 </ul>
 <hr>
 
@@ -81,6 +81,13 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 <tr><td>IP address, approximate location, crash and diagnostic information</td><td>Operating and securing Unity's service</td></tr>
 </tbody></table>
 <p>A device-specific value is used to pick the starting point for your leaderboard name, but that value stays on the device and is not sent. Only the finished name is sent.</p>
+
+<h3>1.5 Received by Unity — the game engine's device statistics</h3>
+<p>The engine this game is built with (Unity) sends device-spec statistics to Unity when the app runs. This is built into the engine and we can't turn it off, and we don't receive this information. It does not include your name, contact details, game records or advertising ID.</p>
+<table><thead><tr><th>Information</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>Device model, operating system and version, CPU, GPU, memory, screen resolution, device language and similar specs</td><td>So Unity can understand the devices its engine runs on and improve the engine</td></tr>
+<tr><td>IP address (as part of the connection)</td><td>Network transmission</td></tr>
+</tbody></table>
 
 <h2>2. Age screen and users under 14</h2>
 <p>The app is intended for ages 13 and up. On first launch you pick your birth year and month; nothing is pre-selected. The answer is stored only on the device and is used as follows. Ads and the leaderboard do not start until the age screen is done.</p>
@@ -136,6 +143,7 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 <tr><th>Retention</th><td>Per Google's policy (<a href="https://policies.google.com/technologies/retention">retention</a>)</td><td>Until the leaderboard is reset or you ask for deletion; otherwise per Unity's policy (<a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity privacy policy</a>)</td></tr>
 <tr><th>How to refuse · effect</th><td>You can turn off personalized ads via "Privacy options" (where shown) or device settings and keep playing. To stop the transfers needed to show ads altogether, you would need to delete the app.</td><td>If you don't open the leaderboard, nothing is sent and you can keep playing. You can ask by email to delete records already posted.</td></tr>
 </tbody></table>
+<p>In addition, the device statistics in 1.5 are received by Unity Technologies over an encrypted connection when the app runs, and kept in the United States and other countries where Unity operates servers, under Unity's policy (<a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Privacy Policy</a>). Because this transmission is built into the engine it can't be turned off in the app; if you don't want it, you can delete the app.</p>
 <!-- 변호사 확인: "거부 시 효과" 칸 — 광고 전송을 거부하는 방법이 사실상 앱 삭제뿐인 것이 제28조의8 ③ (거부 방법·절차·효과 공개) 취지에 맞는지. Unity 의 정확한 법인명(계약 상대방)도 UGS 약관에서 확인. -->
 
 <h2>8. Your rights and how to use them</h2>
@@ -163,8 +171,7 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 </ul>
 
 <h2>11. What we don't do</h2>
-<ul><li>No sign-up or login</li><li>No analytics or crash-reporting tools</li><li>No IDFA (ad tracking); no ATT prompt</li><li>No precise location, contacts, camera, microphone or photos</li><li>No selling of personal information</li><li>No free-text input or chat</li></ul>
-<!-- 확인 필요(구현): Unity 엔진의 하드웨어 통계(ProjectSettings submitAnalytics: 1)와 Unity IAP 5 가 Unity 로 보내는 것이 있는지 확인하지 못했다. 보낸다면 1절에 더한다. -->
+<ul><li>No sign-up or login</li><li>No analytics or crash-reporting tools added by us (the engine's device statistics are described in 1.5)</li><li>No IDFA (ad tracking); no ATT prompt</li><li>No precise location, contacts, camera, microphone or photos</li><li>No selling of personal information</li><li>No free-text input or chat</li></ul>
 
 <h2>12. Region-specific information</h2>
 <h3>12.1 Korea</h3>

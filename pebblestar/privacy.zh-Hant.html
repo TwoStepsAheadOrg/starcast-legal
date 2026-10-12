@@ -43,7 +43,7 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 <li>為了免費營運，本 App 會顯示 <strong>Google AdMob 廣告</strong>。為了投放廣告，Google 會直接接收部分裝置資訊。</li>
 <li><strong>個人化廣告只對 18 歲以上使用者顯示。</strong>未滿 14 歲者不傳送廣告 ID，並關閉個人化廣告。</li>
 <li>付款由 <strong>Apple 與 Google 商店處理</strong>。本公司不會收到你的信用卡資訊。</li>
-<li>不使用分析或當機回報工具。通知於裝置內預約。</li>
+<li>本公司沒有加入分析或當機回報工具。但遊戲引擎（Unity）會以匿名方式將裝置規格統計傳送給 Unity（1.5）。通知於裝置內預約。</li>
 </ul>
 <hr>
 
@@ -81,6 +81,13 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 <tr><td>IP 位址、大略位置、當機與診斷資訊</td><td>Unity 服務的營運與安全</td></tr>
 </tbody></table>
 <p>決定排行榜名稱的起始值時會用到裝置特有的值，但該值只留在裝置內，不會傳送。傳送的只有組合完成的名稱。</p>
+
+<h3>1.5 Unity 接收的資料 — 遊戲引擎的裝置規格統計</h3>
+<p>製作本遊戲的引擎（Unity）會在 App 執行時將裝置規格統計傳送給 Unity。這是引擎內建的功能，本公司無法關閉，也不會收到這些資料。其中不包含姓名、聯絡方式、遊戲紀錄或廣告 ID。</p>
+<table><thead><tr><th>資料</th><th>目的</th></tr></thead><tbody>
+<tr><td>裝置型號、作業系統與版本、CPU・GPU・記憶體・螢幕解析度、裝置語言等規格</td><td>讓 Unity 了解引擎執行的裝置環境並改善引擎</td></tr>
+<tr><td>IP 位址（傳輸過程中）</td><td>網路傳輸</td></tr>
+</tbody></table>
 
 <h2>2. 年齡畫面與未滿 14 歲的使用者</h2>
 <p>本 App 適用 13 歲以上。首次啟動時會出現選擇出生年、月的畫面，沒有預先選好的值。選擇的結果只存在裝置中，並依下表處理。完成年齡畫面前，不會啟動廣告與排行榜。</p>
@@ -136,6 +143,7 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 <tr><th>保存期間</th><td>依 Google 的政策（<a href="https://policies.google.com/technologies/retention">資料保留</a>）</td><td>至排行榜重設或你要求刪除為止；其他依 Unity 的政策</td></tr>
 <tr><th>拒絕方式・拒絕的影響</th><td>可透過「隱私權選項」（於顯示的地區）或裝置設定關閉個人化廣告，仍可正常遊玩。若要完全停止顯示廣告所需的傳輸，須刪除 App。</td><td>不開啟排行榜就不會傳送，仍可正常遊玩。已上傳的紀錄可來信要求刪除。</td></tr>
 </tbody></table>
+<p>此外，1.5 的裝置規格統計由 Unity Technologies 在 App 執行時透過加密連線接收，並依 Unity 的政策（<a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity 隱私權政策</a>）保存在美國等 Unity 營運伺服器的國家。由於是引擎內建的傳輸，無法在 App 內關閉；如不希望傳送，可以刪除 App。</p>
 <!-- 변호사 확인: "거부 시 효과" 칸 — 광고 전송을 거부하는 방법이 사실상 앱 삭제뿐인 것이 제28조의8 ③ (거부 방법·절차·효과 공개) 취지에 맞는지. Unity 의 정확한 법인명(계약 상대방)도 UGS 약관에서 확인. -->
 
 <h2>8. 你的權利與行使方式</h2>
@@ -163,8 +171,7 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 </ul>
 
 <h2>11. 我們不做的事</h2>
-<ul><li>無會員註冊、登入</li><li>無分析或當機回報工具</li><li>不使用 IDFA（廣告追蹤）、不請求 ATT</li><li>不使用精確位置、聯絡人、相機、麥克風或照片</li><li>不出售個人資料</li><li>無自由輸入或聊天</li></ul>
-<!-- 확인 필요(구현): Unity 엔진의 하드웨어 통계(ProjectSettings submitAnalytics: 1)와 Unity IAP 5 가 Unity 로 보내는 것이 있는지 확인하지 못했다. 보낸다면 1절에 더한다. -->
+<ul><li>無會員註冊、登入</li><li>無本公司加入的分析或當機回報工具（引擎的裝置規格統計見 1.5）</li><li>不使用 IDFA（廣告追蹤）、不請求 ATT</li><li>不使用精確位置、聯絡人、相機、麥克風或照片</li><li>不出售個人資料</li><li>無自由輸入或聊天</li></ul>
 
 <h2>12. 各地區說明</h2>
 <h3>12.1 臺灣（個人資料保護法第 8 條告知事項）</h3>
