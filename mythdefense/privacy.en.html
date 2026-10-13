@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Random Myth Defense: Merge TD Privacy Policy</title>
+<style>
+:root { color-scheme: light dark; --ink:#1c1630; --dim:#5b5470; --line:#e6e1f0; --bg:#fffdfa; --accent:#6c4ad6; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#f3efff; --dim:#b3aacb; --line:#2f2947; --bg:#171227; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font: 17px/1.75 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Hiragino Sans", "Segoe UI", sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+h1 { font-size: 1.9rem; line-height:1.3; margin: 0 0 .4rem; letter-spacing:-.01em; }
+h2 { font-size: 1.18rem; margin: 2.4rem 0 .6rem; }
+h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+p, li { color: var(--ink); }
+.lede { color: var(--dim); margin:.2rem 0 2rem; font-size:.95rem; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+th, td { border: 1px solid var(--line); padding: .55rem .7rem; text-align: left; vertical-align: top; }
+th { background: color-mix(in srgb, var(--accent) 8%, transparent); font-weight: 700; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+code { background: color-mix(in srgb, var(--accent) 10%, transparent); padding: .1rem .35rem; border-radius: .3rem; font-size: .9em; }
+a { color: var(--accent); }
+ul { padding-left: 1.2rem; }
+nav { font-size:.9rem; margin-bottom:2rem; }
+nav a { margin-right: .8rem; }
+footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
+</style>
+<!-- 초안: 랜덤 신화 디펜스 1.0 (광고·결제·계정 없음, iOS Game Center 순위표, Unity Personal 엔진). 게시 위치는 README.md.
+     시행일 2026-10-14 는 게시 예정일이다 — 게시일이 바뀌면 세 파일을 모두 고친다. 한국어 판(index.html)과 절 번호가 같다. -->
+<main>
+<nav><a href="./">한국어</a><a href="./privacy.en.html">English</a><a href="./privacy.ja.html">日本語</a></nav>
+<h1>Random Myth Defense: Merge TD Privacy Policy</h1>
+<p>Effective: 2026-10-14</p>
+<hr>
+<p><strong>Summary</strong></p>
+<ul>
+<li>No sign-up, login, ads or in-app purchases. Your progress stays <strong>on this device only</strong>.</li>
+<li>We have no servers and receive no information about you.</li>
+<li>On iPhone and iPad, your best scores may be posted to Apple's <strong>Game Center leaderboards</strong>. Apple handles this; we receive nothing (1.2).</li>
+<li>We haven't added any analytics or crash-reporting tools. The game engine (Unity) does send anonymous device-spec statistics to Unity (1.3).</li>
+<li>A friend challenge code is 12 characters containing only a run number, mode, map, stage and score, and you pass it on yourself (section 4).</li>
+</ul>
+<hr>
+
+<h2>1. Information we handle and why</h2>
+<h3>1.1 Kept only on your device</h3>
+<table><thead><tr><th>What</th><th>Why</th><th>Where</th></tr></thead><tbody>
+<tr><td>Game progress (ambrosia, unlocked heroes, cards and levels, your lineup, weapons and upgrades, stars and best scores per map and stage, Endless Tower records, Daily Challenge records, daily missions and achievements, and running totals such as games played)</td><td>So you can pick up where you left off, and to show the on-device rankings screen</td><td>Device (a file in the app's private storage)</td></tr>
+</tbody></table>
+<p>We don't receive this information on any server. Deleting the app deletes all of it. Scores already posted to Game Center stay with Apple (1.2).</p>
+
+<h3>1.2 Handled by Apple — Game Center leaderboards (iPhone and iPad only)</h3>
+<p>The iOS version offers global leaderboards through Apple's Game Center (GameKit). When the app starts, it tries to connect to Game Center.</p>
+<ul>
+<li>If the device is already signed in to Game Center, the app <strong>connects automatically without asking in the game</strong>, and the records below are posted to the leaderboards.</li>
+<li>If it isn't signed in, iOS may show its own sign-in screen. If you don't sign in or you decline, nothing is sent to the leaderboards and you can keep playing with on-device records.</li>
+<li>To stop sending, sign out in iOS Settings › Game Center.</li>
+</ul>
+<table><thead><tr><th>What is sent (7 leaderboards)</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>Best Adventure record per map (stage and score combined into one value) — 3 maps</td><td rowspan="3">To post and show your records on Game Center leaderboards</td></tr>
+<tr><td>Best Endless Tower wave per map — 3 maps</td></tr>
+<tr><td>That day's Daily Challenge score — 1</td></tr>
+</tbody></table>
+<p>The first time Game Center connects, the app also re-sends the best records already saved on the device once (so runs finished before connecting aren't left out). The app does not read your Game Center nickname, player ID or other account details, and we don't receive them. The name other players see and Game Center's friends features are handled by Apple under Apple's <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a> and your Game Center settings.</p>
+<p>The Android version has no online leaderboard. Rankings are shown from on-device records only, and Google Play Games services are not used.</p>
+
+<h3>1.3 Received by Unity — the game engine's device statistics</h3>
+<p>The engine this game is built with (Unity) sends device-spec statistics to Unity when the app runs. This is built into the engine and we can't turn it off, and we don't receive this information. It does not include your name, contact details, game records or advertising ID.</p>
+<table><thead><tr><th>Information</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>Device model, operating system and version, CPU, GPU, memory, screen resolution, device language and similar specs</td><td>So Unity can understand the devices its engine runs on and improve the engine</td></tr>
+<tr><td>IP address (in the course of transmission)</td><td>Communication</td></tr>
+</tbody></table>
+
+<h2>2. Age and children</h2>
+<p>The app does not ask your age and has no age screen. We don't receive information directly from anyone, including children, so nothing we do requires a parent's or guardian's consent. The engine statistics in 1.3 are sent to Unity the same way regardless of age. Parents can decide whether and how a child uses Game Center through iOS Screen Time and Game Center settings.</p>
+<!-- 변호사 확인: 한국어 판 2절 주석과 같다 (나이를 묻지 않는 앱의 엔진 통계, 대상 연령 미정). -->
+
+<h2>3. Leaderboards</h2>
+<p>The mythological figures on the rankings screen are fixed records built into the game, not real players. The only leaderboards with real players are Game Center on iOS (1.2). There is no free text or chat. To delete your record from a Game Center leaderboard, email us (section 12). We will ask for what we need to identify it (such as the name shown in Game Center and which leaderboard) and delete it with App Store Connect's management tools.</p>
+
+<h2>4. Friend challenge codes and the clipboard</h2>
+<ul>
+<li>"Copy Challenge" on the results screen copies a 12-character code to your device's clipboard. The code contains only <strong>a run number (which fixes the summon order), mode, map, stage and score</strong>, plus one check character to catch typos. It contains no name, device information or identifier.</li>
+<li>You decide whether and how to pass the code to a friend. The app doesn't send the code anywhere.</li>
+<li>The clipboard is read only when you tap "Paste" on the challenge entry screen; the app keeps only characters used in codes, up to 12, and discards the rest. iOS may ask you to allow pasting. Codes are entered with a fixed letter pad only; there is no free text input.</li>
+</ul>
+
+<h2>5. Vibration, notifications and device permissions</h2>
+<ul>
+<li><strong>Vibration:</strong> On iPhone, short haptics play at moments such as merges and bosses. The app reads the iOS "Reduce Motion" setting on the device to tone down screen shake. The Android version does not vibrate.</li>
+<li><strong>Notifications:</strong> The app sends no notifications.</li>
+<li><strong>Permissions:</strong> The app doesn't request camera, microphone, location, photos or contacts. The Android internet permission is added by default by the game engine; the only thing the Android version sends over the internet is the engine statistics in 1.3.</li>
+</ul>
+
+<h2>6. Sharing and international transfers</h2>
+<p>We do not sell your personal information or hand it to other companies. However, features from the companies below, built into the app, receive information <strong>directly and outside Korea</strong> while you use the app. Under Article 28-8 of Korea's Personal Information Protection Act, we disclose the following.</p>
+<table><thead><tr><th></th><th>Unity Technologies</th><th>Apple Inc. <small>(only on iPhone/iPad when signed in to Game Center)</small></th></tr></thead><tbody>
+<tr><th>Recipient · contact</th><td>Unity Technologies (Unity Software Inc. and affiliates) · contact via the <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a></td><td>Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA · <a href="https://www.apple.com/legal/privacy/contact/">Apple privacy contact</a></td></tr>
+<tr><th>Countries</th><td>United States and other countries where Unity operates servers</td><td>United States and other countries where Apple operates servers</td></tr>
+<tr><th>When · how</th><td>When the app runs; sent by the engine over an encrypted connection</td><td>When Game Center connects and when a run ends with a new best record; sent by iOS (GameKit) over an encrypted connection</td></tr>
+<tr><th>Items</th><td>The information in 1.3 (device specs, IP address)</td><td>The information in 1.2 (best records and scores per leaderboard). Your Game Center account is the one Apple already holds</td></tr>
+<tr><th>Purpose</th><td>Understanding the engine's device environment and improving the engine</td><td>Providing Game Center leaderboards</td></tr>
+<tr><th>Retention</th><td>Per Unity's policy (<a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity privacy policy</a>)</td><td>Per Apple's policy (<a href="https://www.apple.com/legal/privacy/">Apple privacy policy</a>); leaderboard records until you ask for deletion</td></tr>
+<tr><th>How to refuse · effect</th><td>Because this transmission is built into the engine it can't be turned off in the app; if you don't want it, you can delete the app.</td><td>If you don't sign in to Game Center, or sign out in iOS Settings, nothing is sent and you can keep playing. You can ask by email to delete records already posted.</td></tr>
+</tbody></table>
+
+<h2>7. Your rights and how to use them</h2>
+<ul>
+<li><strong>Delete the app:</strong> Everything on the device (game progress and records) is deleted with the app. Scores posted to Game Center remain with Apple even after you delete the app.</li>
+<li><strong>Game Center:</strong> You can sign out or change your visibility in iOS Settings › Game Center. You can ask by email to delete leaderboard records, as in section 3.</li>
+<li><strong>Access, correction, deletion, restriction:</strong> Email us (section 12) and we will act without delay. The only information we hold directly is your email to us; for information held by Unity or Apple, we will point you to those companies or act within what we can do (such as deleting leaderboard records).</li>
+<li>A parent or guardian may exercise these rights on behalf of a child.</li>
+</ul>
+
+<h2>8. Retention and deletion</h2>
+<ul>
+<li>Information on the device: until you delete the app, which destroys it.</li>
+<li>Information received by Unity or Apple: for the periods in the table in section 6.</li>
+<li>Emails to us: deleted without delay once handled, unless the law requires us to keep them, in which case they are kept separately for that period only.</li>
+<li>Deletion is done so that electronic files cannot be recovered.</li>
+</ul>
+
+<h2>9. Security</h2>
+<ul>
+<li>We have no servers and do not collect user information, keeping what we hold to a minimum.</li>
+<li>The engine statistics and Game Center transmissions use encrypted connections.</li>
+<li>Emails to us are managed by our privacy officer.</li>
+</ul>
+
+<h2>10. What we don't do</h2>
+<ul><li>No sign-up or login (Game Center uses your Apple account, not an account with us)</li><li>No ads · no in-app purchases · no advertising ID or IDFA · no ATT prompt</li><li>No analytics or crash-reporting tools added by us (the engine's device statistics are described in 1.3)</li><li>No company servers</li><li>No location, contacts, camera, microphone or photos</li><li>No notifications</li><li>No selling of personal information</li><li>No free-text input or chat</li></ul>
+
+<h2>11. Region-specific information</h2>
+<h3>11.1 Korea</h3>
+<p>For help with privacy violations in Korea, you can contact the Personal Information Infringement Report Center (118, <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>), the Personal Information Dispute Mediation Committee (1833-6972, <a href="https://www.kopico.go.kr">kopico.go.kr</a>), the Supreme Prosecutors' Office (1301, <a href="https://www.spo.go.kr">spo.go.kr</a>) or the Korean National Police Agency (182, <a href="https://ecrm.police.go.kr">ecrm.police.go.kr</a>).</p>
+<h3>11.2 Japan</h3>
+<p>The items to be published under the external transmission rules of Japan's Telecommunications Business Act (information sent, recipients, purposes) are the same as the tables in 1.2 and 1.3. They are also set out in the section 「外部送信について」 of the Japanese version.</p>
+<h3>11.3 United States</h3>
+<ul>
+<li><strong>COPPA:</strong> We do not collect personal information directly from anyone, including children under 13, and there are no personalized ads.</li>
+<li><strong>California and other state privacy laws:</strong> We do not sell personal information or use it for targeted advertising.</li>
+</ul>
+
+<h2>12. Contact · privacy officer</h2>
+<ul><li>TwoStepsAhead Inc. (Republic of Korea), business registration 319-87-03770</li><li>Privacy officer: Gunhee Kim (CEO)</li><li>Email: glenn.kim@twostepsahead.co.kr</li></ul>
+
+<h2>13. Changes</h2>
+<p>If we change this policy, we will announce it on this page before it takes effect. If we add features that handle information, such as ads or purchases, we will update this policy before releasing that version.</p>
+<hr>
+<footer>TwoStepsAhead Inc. · Random Myth Defense</footer>
+</main>
+</html>
