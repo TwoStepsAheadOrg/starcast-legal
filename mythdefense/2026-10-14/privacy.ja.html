@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ランダム神話ディフェンス (Random Myth Defense) プライバシーポリシー</title>
+<style>
+:root { color-scheme: light dark; --ink:#1c1630; --dim:#5b5470; --line:#e6e1f0; --bg:#fffdfa; --accent:#6c4ad6; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#f3efff; --dim:#b3aacb; --line:#2f2947; --bg:#171227; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font: 17px/1.75 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Hiragino Sans", "Segoe UI", sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+h1 { font-size: 1.9rem; line-height:1.3; margin: 0 0 .4rem; letter-spacing:-.01em; }
+h2 { font-size: 1.18rem; margin: 2.4rem 0 .6rem; }
+h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+p, li { color: var(--ink); }
+.lede { color: var(--dim); margin:.2rem 0 2rem; font-size:.95rem; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+th, td { border: 1px solid var(--line); padding: .55rem .7rem; text-align: left; vertical-align: top; }
+th { background: color-mix(in srgb, var(--accent) 8%, transparent); font-weight: 700; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+code { background: color-mix(in srgb, var(--accent) 10%, transparent); padding: .1rem .35rem; border-radius: .3rem; font-size: .9em; }
+a { color: var(--accent); }
+ul { padding-left: 1.2rem; }
+nav { font-size:.9rem; margin-bottom:2rem; }
+nav a { margin-right: .8rem; }
+footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
+</style>
+<!-- 초안: 랜덤 신화 디펜스 1.0 (광고·결제·계정 없음, iOS Game Center 순위표, Unity Personal 엔진). 게시 위치는 README.md.
+     시행일 2026-10-14 는 게시 예정일이다 — 게시일이 바뀌면 세 파일을 모두 고친다. 한국어 판(index.html)과 절 번호가 같고, 6-2 外部送信について 만 일본어 판에 더 있다. -->
+<main>
+<nav><a href="./">한국어</a><a href="./privacy.en.html">English</a><a href="./privacy.ja.html">日本語</a></nav>
+<h1>ランダム神話ディフェンス (Random Myth Defense) プライバシーポリシー</h1>
+<p>施行日：2026-10-14</p>
+<hr>
+<p><strong>まとめ</strong></p>
+<ul>
+<li>会員登録・ログイン・広告・アプリ内課金はありません。ゲームの記録は<strong>この端末の中だけ</strong>に保存します。</li>
+<li>当社はサーバーを持たず、利用者の情報を受け取りません。</li>
+<li>iPhone・iPad では、最高記録が Apple の<strong>Game Center ランキング</strong>に送られることがあります。Apple が取り扱い、当社は受け取りません（1.2）。</li>
+<li>当社は解析・クラッシュ報告ツールを組み込んでいません。ただし、ゲームエンジン（Unity）が端末仕様の統計を匿名で Unity に送ります（1.3）。</li>
+<li>友だちへの挑戦状コードは、対戦番号・モード・マップ・ステージ・スコアだけを含む12文字で、利用者が自分でコピーして渡します（第4項）。</li>
+</ul>
+<hr>
+
+<h2>1. 取り扱う情報と利用目的</h2>
+<h3>1.1 端末内にのみ保存するもの</h3>
+<table><thead><tr><th>何を</th><th>なぜ</th><th>どこに</th></tr></thead><tbody>
+<tr><td>ゲームの進行（アンブロシア、解放した英雄・カード・レベル、出撃する英雄、武器・強化、マップ・ステージごとの星と最高記録、無限の塔の記録、今日のチャレンジの記録、デイリーミッション・実績、プレイ回数などの累計記録）</td><td>続きから遊ぶため、端末内の順位画面に表示するため</td><td>端末（アプリ専用の保存領域のファイル）</td></tr>
+</tbody></table>
+<p>当社はこれらの情報をサーバーで受け取りません。アプリを削除するとすべて消えます。ただし、Game Center にすでに送られたスコアは Apple に残ります（1.2）。</p>
+
+<h3>1.2 Apple が取り扱うもの — Game Center ランキング（iPhone・iPad のみ）</h3>
+<p>iOS 版は Apple の Game Center（GameKit）で世界ランキングを提供します。アプリを起動すると Game Center への接続を試みます。</p>
+<ul>
+<li>端末がすでに Game Center にサインインしている場合は、<strong>ゲーム内で確認せずに自動で接続</strong>し、次の記録をランキングに送ります。</li>
+<li>サインインしていない場合は、iOS が独自のサインイン画面を表示することがあります。サインインしない・断った場合はランキングに何も送らず、端末内の記録だけでそのまま遊べます。</li>
+<li>送信を止めるには、iOS の設定 › Game Center でサインアウトしてください。</li>
+</ul>
+<table><thead><tr><th>送るもの（ランキング7つ）</th><th>目的</th></tr></thead><tbody>
+<tr><td>冒険モードのマップごとの最高記録（ステージとスコアを一つにまとめた値）— 3マップ</td><td rowspan="3">Game Center ランキングに記録を載せて表示するため</td></tr>
+<tr><td>無限の塔のマップごとの最高ウェーブ — 3マップ</td></tr>
+<tr><td>その日の今日のチャレンジのスコア — 1つ</td></tr>
+</tbody></table>
+<p>Game Center に初めて接続したときは、接続前に端末に保存されていた最高記録も一度送り直します（接続前に終わった対戦が抜けないように）。アプリは Game Center のニックネーム・プレイヤーIDなどのアカウント情報を読まず、当社もこれらを受け取りません。ランキングで他の利用者に見える名前やフレンド機能は、Apple が Apple の<a href="https://www.apple.com/legal/privacy/">プライバシーポリシー</a>と Game Center の設定に従って取り扱います。</p>
+<p>Android 版にはオンラインランキングはありません。順位は端末内の記録だけで表示し、Google Play ゲームサービスは使いません。</p>
+
+<h3>1.3 Unity が受け取るもの — ゲームエンジンの端末仕様統計</h3>
+<p>このゲームを作ったエンジン（Unity）は、アプリの実行時に端末仕様の統計を Unity に送ります。エンジンに組み込まれた機能のため当社はオフにできず、当社はこの情報を受け取りません。氏名・連絡先・ゲームの記録・広告IDは含まれません。</p>
+<table><thead><tr><th>情報</th><th>目的</th></tr></thead><tbody>
+<tr><td>端末の機種、OSとバージョン、CPU・GPU・メモリ・画面解像度、端末の言語などの仕様</td><td>Unity がエンジンの動作環境を把握し、エンジンを改善するため</td></tr>
+<tr><td>IPアドレス（通信の過程で）</td><td>通信のため</td></tr>
+</tbody></table>
+
+<h2>2. 年齢とお子さま</h2>
+<p>本アプリは年齢をたずねず、年齢画面もありません。当社はお子さまを含め誰からも情報を直接受け取らないため、当社の取り扱いの中に保護者の同意が必要となるものはありません。1.3 のエンジン統計は年齢にかかわらず同じ方法で Unity に送信されます。お子さまが Game Center を使うかどうかや公開範囲は、保護者の方が iOS のスクリーンタイム・Game Center の設定で決められます。</p>
+<!-- 변호사 확인: 한국어 판 2절 주석과 같다 (나이를 묻지 않는 앱의 엔진 통계, 대상 연령 미정). -->
+
+<h2>3. ランキング</h2>
+<p>順位画面に並ぶ神話の人物の記録は、ゲームにあらかじめ入っている固定の記録で、実在の利用者ではありません。実在の利用者と競うランキングは iOS の Game Center だけです（1.2）。自由入力・チャットはありません。Game Center ランキングから自分の記録を消したい場合は、第12項のメールでご請求ください。確認に必要な情報（Game Center に表示される名前とランキングなど）をうかがったうえで、App Store Connect の管理ツールで削除します。</p>
+
+<h2>4. 友だちへの挑戦状コードとクリップボード</h2>
+<ul>
+<li>結果画面の「挑戦状をコピー」は、12文字のコードを端末のクリップボードにコピーします。コードに含まれるのは<strong>対戦番号（召喚の順番を決める数）・モード・マップ・ステージ・スコア</strong>と、入力ミスを見つけるための1文字だけで、名前・端末情報・識別子は含まれません。</li>
+<li>コードを友だちに渡すかどうか、どう渡すかは利用者が自分で決めます。アプリはコードをどこにも送りません。</li>
+<li>挑戦状を入れる画面で「貼り付け」を押したときだけクリップボードを読み、コードに使う文字だけを最大12文字取り出して、残りは捨てます。iOS が貼り付けの許可をたずねることがあります。コードは決まった文字盤でのみ入力し、自由入力はありません。</li>
+</ul>
+
+<h2>5. 振動・通知・端末の権限</h2>
+<ul>
+<li><strong>振動：</strong>iPhone では、合成やボスなどの場面で短い触覚フィードバックを出します。iOS の「視差効果を減らす」設定を端末内で読み、画面の揺れを小さくします。Android 版は振動を使いません。</li>
+<li><strong>通知：</strong>通知は送りません。</li>
+<li><strong>権限：</strong>カメラ・マイク・位置情報・写真・連絡先を求めません。Android のインターネット権限はゲームエンジンが標準で付けるもので、Android 版がインターネットで送るのは 1.3 のエンジン統計だけです。</li>
+</ul>
+
+<h2>6. 第三者提供・委託・国外移転</h2>
+<p>当社は利用者の個人情報を販売したり他社に渡したりしません。ただし、アプリに組み込まれた次の会社の機能が、アプリの利用中に情報を<strong>国外で直接</strong>受け取ります。韓国の個人情報保護法第28条の8に基づき、次のとおりお知らせします。</p>
+<table><thead><tr><th></th><th>Unity Technologies</th><th>Apple Inc. <small>（iPhone・iPad で Game Center にサインインしている場合のみ）</small></th></tr></thead><tbody>
+<tr><th>移転先・連絡先</th><td>Unity Technologies（Unity Software Inc. および関連会社）・<a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity ゲームプレイヤー・アプリ利用者プライバシーポリシー</a>の問い合わせ窓口</td><td>Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA・<a href="https://www.apple.com/legal/privacy/contact/">Apple プライバシーに関するお問い合わせ</a></td></tr>
+<tr><th>移転先の国</th><td>米国など Unity がサーバーを運営する国</td><td>米国など Apple がサーバーを運営する国</td></tr>
+<tr><th>日時・方法</th><td>アプリの実行時。エンジンが暗号化された通信で送信</td><td>Game Center への接続時と、対戦が終わって最高記録が更新されたとき。iOS（GameKit）が暗号化された通信で送信</td></tr>
+<tr><th>項目</th><td>1.3の情報（端末仕様、IPアドレス）</td><td>1.2の情報（ランキングごとの最高記録・スコア）。Game Center アカウントは Apple がすでに持っているものを使います</td></tr>
+<tr><th>目的</th><td>エンジンの動作環境の把握・エンジンの改善</td><td>Game Center ランキングの提供</td></tr>
+<tr><th>保存期間</th><td>Unity のポリシーに従う（<a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity プライバシーポリシー</a>）</td><td>Apple のポリシーに従う（<a href="https://www.apple.com/legal/privacy/">Apple プライバシーポリシー</a>）。ランキングの記録は削除請求まで</td></tr>
+<tr><th>拒否の方法・拒否した場合</th><td>エンジンに組み込まれた送信のためアプリ内ではオフにできません。望まない場合はアプリを削除してください。</td><td>Game Center にサインインしない、または iOS の設定でサインアウトすれば送信されず、ゲームはそのまま遊べます。送信済みの記録はメールで削除を請求できます。</td></tr>
+</tbody></table>
+
+<h2>6-2. 外部送信について</h2>
+<p>電気通信事業法第27条の12（外部送信規律）に基づき、本アプリから利用者の端末の外部へ送信される情報を次のとおり公表します。</p>
+<!-- 변호사 확인: 外部送信規律이 일본 법인 없는 한국 회사의 앱에 어떻게 적용되는지. 공표 장소 요건(앱에서 쉽게 닿는 곳) — 지금 앱 안에 처리방침 링크가 없다(README 참고). Game Center 는 OS(GameKit)가 보내는 것이지만 앱이 부르는 것이라 적었다. -->
+<table><thead><tr><th>送信先</th><th>送信される情報</th><th>利用目的</th><th>送信先のポリシー</th></tr></thead><tbody>
+<tr><td>Unity Technologies（ゲームエンジン — 全端末）</td><td>端末の機種、OSとバージョン、CPU・GPU・メモリ・画面解像度、端末の言語などの仕様、IPアドレス</td><td>エンジンの動作環境の把握・エンジンの改善</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity プライバシーポリシー</a></td></tr>
+<tr><td>Apple Inc.（Game Center — iPhone・iPad で Game Center にサインインしている場合のみ）</td><td>冒険モードのマップごとの最高記録、無限の塔のマップごとの最高ウェーブ、今日のチャレンジのスコア</td><td>Game Center ランキングの提供</td><td><a href="https://www.apple.com/legal/privacy/">Apple プライバシーポリシー</a></td></tr>
+</tbody></table>
+
+<h2>7. 利用者の権利と行使方法</h2>
+<ul>
+<li><strong>アプリの削除：</strong>端末内の情報（ゲームの進行・記録）はアプリを削除するとすべて消えます。Game Center に送られたスコアは、アプリを削除しても Apple に残ります。</li>
+<li><strong>Game Center：</strong>iOS の設定 › Game Center でサインアウトしたり、公開範囲を変えたりできます。ランキング記録の削除は第3項のとおりメールで請求できます。</li>
+<li><strong>開示・訂正・利用停止・削除等の請求：</strong>第12項のメールでご請求いただければ遅滞なく対応します。当社が直接保有するのはお問い合わせのメールだけです。Unity・Apple が保有する情報については、各社への請求方法をご案内するか、当社でできる範囲（ランキング記録の削除など）で対応します。</li>
+<li>保護者の方も、お子さまに代わって上記の権利を行使できます。</li>
+</ul>
+
+<h2>8. 保存期間と削除</h2>
+<ul>
+<li>端末内の情報：アプリを削除するまで。削除により消去されます。</li>
+<li>Unity・Apple が受け取った情報：第6項の表の期間。</li>
+<li>お問い合わせのメール：対応完了後、遅滞なく削除します。法令で保存が必要な場合はその期間に限り分けて保管します。</li>
+<li>電子ファイルは復元できない方法で削除します。</li>
+</ul>
+
+<h2>9. 安全管理措置</h2>
+<ul>
+<li>当社はサーバーを持たず利用者の情報を集めないため、保有する情報を最小限にしています。</li>
+<li>エンジン統計と Game Center の送信は暗号化された通信で行われます。</li>
+<li>お問い合わせのメールは個人情報保護責任者が管理します。</li>
+<li>当社は大韓民国の事業者であり、お問い合わせのメールは大韓民国で管理します。大韓民国には個人情報保護法があります。</li>
+</ul>
+
+<h2>10. 行わないこと</h2>
+<ul><li>会員登録・ログインなし（Game Center は Apple のアカウントを使い、当社のアカウントではありません）</li><li>広告なし・アプリ内課金なし・広告ID と IDFA を使わず、ATT の許可を求めない</li><li>当社が組み込んだ解析・クラッシュ報告ツールなし（エンジンの端末仕様統計は1.3）</li><li>当社のサーバーなし</li><li>位置情報・連絡先・カメラ・マイク・写真を使用しない</li><li>通知なし</li><li>個人情報の販売なし</li><li>自由入力・チャットなし</li></ul>
+
+<h2>11. 国・地域ごとのご案内</h2>
+<h3>11.1 韓国</h3>
+<p>韓国の個人情報保護法に基づく国外移転のお知らせは第6項のとおりです。韓国での相談・救済窓口は韓国語版の11.1に記載しています。</p>
+<h3>11.2 米国</h3>
+<ul>
+<li><strong>COPPA：</strong>当社は13歳未満の子どもを含め誰からも個人情報を直接取得せず、パーソナライズ広告もありません。</li>
+<li><strong>カリフォルニア州などの州法：</strong>当社は個人情報を販売せず、ターゲティング広告にも使いません。</li>
+</ul>
+
+<h2>12. お問い合わせ・個人情報保護責任者</h2>
+<ul><li>株式会社トゥーステップスアヘッド（TwoStepsAhead Inc.・大韓民国）事業者登録番号 319-87-03770</li><li>所在地：大韓民国ソウル特別市麻浦区楊花路186 6階607号</li><li>代表者・個人情報保護責任者：キム・ゴンヒ（代表取締役）</li><li>メール：glenn.kim@twostepsahead.co.kr</li></ul>
+
+<h2>13. 変更</h2>
+<p>本ポリシーを変更する場合は、施行前にこのページでお知らせします。広告や課金など情報を取り扱う機能を加える場合は、そのバージョンを出す前に本ポリシーを改めます。</p>
+<hr>
+<footer>TwoStepsAhead Inc. · Random Myth Defense</footer>
+</main>
+</html>
