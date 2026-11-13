@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Random Myth Defense: Merge TD Privacy Policy</title>
+<style>
+:root { color-scheme: light dark; --ink:#1c1630; --dim:#5b5470; --line:#e6e1f0; --bg:#fffdfa; --accent:#6c4ad6; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#f3efff; --dim:#b3aacb; --line:#2f2947; --bg:#171227; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font: 17px/1.75 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Hiragino Sans", "Segoe UI", sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+h1 { font-size: 1.9rem; line-height:1.3; margin: 0 0 .4rem; letter-spacing:-.01em; }
+h2 { font-size: 1.18rem; margin: 2.4rem 0 .6rem; }
+h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+p, li { color: var(--ink); }
+.lede { color: var(--dim); margin:.2rem 0 2rem; font-size:.95rem; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+th, td { border: 1px solid var(--line); padding: .55rem .7rem; text-align: left; vertical-align: top; }
+th { background: color-mix(in srgb, var(--accent) 8%, transparent); font-weight: 700; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+code { background: color-mix(in srgb, var(--accent) 10%, transparent); padding: .1rem .35rem; border-radius: .3rem; font-size: .9em; }
+a { color: var(--accent); }
+ul { padding-left: 1.2rem; }
+nav { font-size:.9rem; margin-bottom:2rem; }
+nav a { margin-right: .8rem; }
+footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
+</style>
+<!-- 초안: 랜덤 신화 디펜스 1.0 (광고·결제·계정 없음, iOS Game Center 순위표, Unity Personal 엔진). 게시 위치는 README.md.
+     시행일 2026-10-14 는 게시 예정일이다 — 게시일이 바뀌면 세 파일을 모두 고친다. 한국어 판(index.html)과 절 번호가 같다. -->
+<!-- 1.2.0 개정(광고·인앱 결제): 근거와 절 번호 변경은 한국어 판(index.html) 머리 주석과 같다. 새 3절(Ads)·4절(In-app purchases)이 들어가 옛 3~13절이 5~15절이 됐다. 1.5(Google 광고)·1.6(결제)이 새로 생겼다.
+     개정일 2026-11-12 는 자리 표시다. 1.2.0 을 내는 날로 세 파일을 모두 고친다. -->
+<main>
+<nav><a href="./">한국어</a><a href="./privacy.en.html">English</a><a href="./privacy.ja.html">日本語</a></nav>
+<h1>Random Myth Defense: Merge TD Privacy Policy</h1>
+<p>Effective: 2026-10-14 · Revised: 2026-11-12 (ad measurement by TikTok in the Android version — 1.4) · Revised: 2026-11-12 (1.2.0 — ads and in-app purchases) · Revised: 2026-11-13 (1.2.1 — play-progress events in the Android version, 1.4)</p>
+<hr>
+<p><strong>Summary</strong></p>
+<ul>
+<li>No sign-up or login. Your progress stays <strong>on this device only</strong>.</li>
+<li>We have no servers and receive no information about you.</li>
+<li>From version 1.2.0 the game has <strong>Google AdMob rewarded ads</strong>. An ad plays <strong>only when you tap a button</strong>; there are no banner or interstitial ads. To prepare and deliver ads, Google receives some device information directly (1.5).</li>
+<li>From version 1.2.0 the game has <strong>in-app purchases</strong>. Payment is handled by <strong>the Apple and Google stores</strong>; we never receive your card details (1.6, section 4).</li>
+<li>Shrine draws are random. Because Ambrosia, which draws cost, can be bought, the odds for every hero are shown at Shrine › "View Odds" before you draw (section 4).</li>
+<li>On iPhone and iPad, your best scores may be posted to Apple's <strong>Game Center leaderboards</strong>. Apple handles this; we receive nothing (1.2).</li>
+<li>We haven't added a separate analytics or crash-reporting tool. The game engine (Unity) does send anonymous device-spec statistics to Unity (1.3), and the Android version sends a few play-progress events through TikTok's measurement tool (1.4).</li>
+<li>The <strong>Android version</strong> includes TikTok's ad measurement tool, which sends the fact of installs, launches and return visits, a few play-progress events (from 1.2.1 — first open, runs started and finished, and the like), plus the device's advertising ID, to TikTok. This is to measure whether our TikTok ads lead to installs and where people who arrive stop playing, so that we can improve the ads and the game, and is separate from the ads shown inside the app (1.5) (1.4). The iPhone and iPad version does not include it.</li>
+<li>A friend challenge code is 12 characters containing only a run number, mode, map, stage and score, and you pass it on yourself (section 6).</li>
+</ul>
+<hr>
+
+<h2>1. Information we handle and why</h2>
+<h3>1.1 Kept only on your device</h3>
+<table><thead><tr><th>What</th><th>Why</th><th>Where</th></tr></thead><tbody>
+<tr><td>Game progress (ambrosia, unlocked heroes, cards and levels, your lineup, weapons and upgrades, stars and best scores per map and stage, Endless Tower records, Daily Challenge records, daily missions and achievements, and running totals such as games played)</td><td>So you can pick up where you left off, and to show the on-device rankings screen</td><td>Device (a file in the app's private storage)</td></tr>
+<tr><td>What you own from the shop (which of VIP, the Starter Pack, the Norse Myths Pack and the Olympus Skin Set you have) and recent transaction IDs (up to 64)</td><td>To apply what you bought and not grant the same purchase twice</td><td>Device (the same file)</td></tr>
+<tr><td>Ad reward records (how many ad rewards you took today, and the days you used the free draw and "Try One Match")</td><td>To keep to the daily limits (section 3)</td><td>Device (the same file)</td></tr>
+<tr><td>Ad consent status</td><td>So the consent message isn't shown again every time</td><td>Device (stored by Google's consent tool)</td></tr>
+</tbody></table>
+<p>We don't receive this information on any server. Deleting the app deletes all of it. However, scores already posted to Game Center stay with Apple (1.2), and items you own for good, which the store remembers, can be brought back with "Restore Purchases" (section 4).</p>
+
+<h3>1.2 Handled by Apple — Game Center leaderboards (iPhone and iPad only)</h3>
+<p>The iOS version offers global leaderboards through Apple's Game Center (GameKit). When the app starts, it tries to connect to Game Center.</p>
+<ul>
+<li>If the device is already signed in to Game Center, the app <strong>connects automatically without asking in the game</strong>, and the records below are posted to the leaderboards.</li>
+<li>If it isn't signed in, iOS may show its own sign-in screen. If you don't sign in or you decline, nothing is sent to the leaderboards and you can keep playing with on-device records.</li>
+<li>To stop sending, sign out in iOS Settings › Game Center.</li>
+</ul>
+<table><thead><tr><th>What is sent (7 leaderboards)</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>Best Adventure record per map (stage and score combined into one value) — 3 maps</td><td rowspan="3">To post and show your records on Game Center leaderboards</td></tr>
+<tr><td>Best Endless Tower wave per map — 3 maps</td></tr>
+<tr><td>That day's Daily Challenge score — 1</td></tr>
+</tbody></table>
+<p>The first time Game Center connects, the app also re-sends the best records already saved on the device once (so runs finished before connecting aren't left out). The app does not read your Game Center nickname, player ID or other account details, and we don't receive them. The name other players see and Game Center's friends features are handled by Apple under Apple's <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a> and your Game Center settings.</p>
+<p>The Android version has no online leaderboard. Rankings are shown from on-device records only, and Google Play Games services are not used.</p>
+
+<h3>1.3 Received by Unity — the game engine's device statistics</h3>
+<p>The engine this game is built with (Unity) sends device-spec statistics to Unity when the app runs. This is built into the engine and we can't turn it off, and we don't receive this information. It does not include your name, contact details, game records or advertising ID.</p>
+<table><thead><tr><th>Information</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>Device model, operating system and version, CPU, GPU, memory, screen resolution, device language and similar specs</td><td>So Unity can understand the devices its engine runs on and improve the engine</td></tr>
+<tr><td>IP address (in the course of transmission)</td><td>Communication</td></tr>
+</tbody></table>
+
+<h3>1.4 Received by TikTok — ad measurement (Android version only, from 2026-11-12)</h3>
+<p>We run install ads for this game on TikTok. To measure whether people who saw an ad actually installed and opened the game, the Android version includes TikTok's measurement tool (TikTok Business SDK). When the app runs, it sends the information below directly to TikTok. We do not receive it per person; we only see totals, such as the number of installs, in TikTok Ads Manager. This measurement is separate from the ads shown inside the app (Google AdMob, 1.5); TikTok does not show ads inside the app.</p>
+<table><thead><tr><th>Information</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>The fact and time of an app install, launch and a return on day 2</td><td>Measuring ad results; TikTok adjusts ad delivery so ads reach people likely to install</td></tr>
+<tr><td>Play-progress events (from 1.2.1): first open; first run started; first and third run finished; second run started; each time a run ends, which wave range it reached (one of eight ranges), whether it was a normal or Hardcore run, and whether it was won; the first time the Shrine and the Shop are opened; the first rewarded ad watched to the end — and the time of each</td><td>Measuring ad results (where people who came from an ad stop playing), improving the game, TikTok adjusting ad delivery</td></tr>
+<tr><td>The device's advertising ID (Google advertising ID) and a random identifier created by the measurement tool</td><td>Linking the device that saw an ad with the device that installed</td></tr>
+<tr><td>Google Play install referrer</td><td>Seeing which ad led to an install</td></tr>
+<tr><td>Device information such as model, operating system, language and network type; app version; IP address</td><td>Measurement and communication</td></tr>
+</tbody></table>
+<p>Apart from the play-progress events in the table above, game progress is not sent. Scores, run numbers, the heroes and currency you own, on-screen text, payment information and the fact of a purchase are not sent (we turned off the features that send screen content and track purchases automatically). A play-progress event is only a label and three small numbers (wave range, mode, win or loss), but it is transmitted together with the advertising ID and random identifier in the same table. The app has no names or contact details to send. The iPhone and iPad version does not send these events.</p>
+
+<h3>1.5 Received by Google — ads (Google AdMob, consent via Google UMP; from version 1.2.0)</h3>
+<p>When the app starts, Google's tools built into the app send the following <strong>directly to Google</strong> to check ad consent status and load ads in advance. We do not receive or store this information ourselves. An ad appears on screen only when you tap a button (section 3), but this communication happens even if you never watch an ad.</p>
+<table><thead><tr><th>Information</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>IP address and approximate location derived from it (country/city level)</td><td rowspan="4">Ad delivery, frequency capping, fraud prevention, ad measurement, checking consent status, and personalized ads (on Android, depending on your consent choice and device settings)</td></tr>
+<tr><td>Device and advertising identifiers (Android advertising ID and app set ID, iOS identifier for vendor (IDFV), etc.)</td></tr>
+<tr><td>Ad interactions (ads viewed, tapped or watched to the end)</td></tr>
+<tr><td>Diagnostic information (errors and performance of the ad SDK)</td></tr>
+</tbody></table>
+<p>On iOS we do not ask for App Tracking Transparency permission, so <strong>we do not get the IDFA (advertising identifier)</strong>. On Android, Google may use the advertising ID, depending on your consent choice and device settings. The app does not ask your age, so this works the same way at every age, and we request only G-rated (general audiences) ad content for everyone (section 2).</p>
+<p>After you buy VIP, rewarded-ad buttons give the reward without an ad, but the app may still contact Google to check consent status and prepare ads.</p>
+<!-- 변호사 확인: 한국어 판 1.5 주석과 같다 (Google 의 AdMob 데이터 공개 문서를 옮긴 항목, GMA 11.5.0, TFCD·TFUA 없음, Android 는 나이와 관계없이 광고 ID). -->
+
+<h3>1.6 Handled by Apple and Google — in-app purchases (from version 1.2.0)</h3>
+<p>When you buy something, payment, billing and refunds are handled by <strong>Apple (App Store) or Google (Google Play)</strong>. We do not receive your name, card number or billing address, and we do not send receipts to any server of ours (we have none). The app talks to the stores through Unity's in-app purchasing library (Unity IAP) and only uses the product name and transaction ID the store provides, on the device (1.1). Payment information is governed by each store's privacy policy.</p>
+
+<h2>2. Age and children</h2>
+<p>The app does not ask your age and has no age screen. It is rated 9+ on the App Store and listed for ages 13 and up on Google Play. We don't receive information directly from anyone, including children. However, other companies' tools built into the app work the same way regardless of age.</p>
+<ul>
+<li>The engine statistics in 1.3 are sent to Unity regardless of age.</li>
+<li>The TikTok measurement in 1.4 works the same way regardless of age in the Android version.</li>
+<li>The ads in 1.5 do not distinguish by age either. For that reason we request only G-rated (general audiences) ad content for everyone, and an ad plays only when you tap a button. On iOS the IDFA is not obtained. On Android the advertising ID may be sent to Google; a parent can delete the advertising ID in device settings (section 9).</li>
+<li>For purchases by minors, see section 4. Parents can block purchases or require approval with iOS Screen Time (In-App Purchases restrictions, Ask to Buy) or Google Play's purchase authentication and family settings.</li>
+<li>Parents can decide whether and how a child uses Game Center through iOS Screen Time and Game Center settings.</li>
+</ul>
+<!-- 변호사 확인: 한국어 판 2절 주석과 같다 (나이를 묻지 않는 앱의 엔진 통계, 대상 연령 미정). -->
+<!-- 변호사 확인(1.2.0 광고): 한국어 판 2절의 1.2.0 주석과 같다 (나이 화면·아동 처리 표시 없이 AdMob, 옛 「nothing we do requires a parent's or guardian's consent」 문장을 뺌). -->
+
+<h2>3. Ads and behavioral data</h2>
+<p>The only ads in this app are <strong>rewarded ads</strong>, and they play only when you choose to tap one of the buttons below. There are no banner ads and no interstitial ads (ads that appear without you tapping).</p>
+<ul>
+<li>Doubling that run's reward on the results screen (once per run)</li>
+<li>A free draw at the Shrine (once a day)</li>
+<li>Trying a pack hero you don't own for one run (once a day)</li>
+</ul>
+<p>You can take at most 8 ad rewards a day in total. If you buy VIP, you get the same rewards without watching ads. We request only G-rated (general audiences) ad content. You can play the whole game without watching any ads.</p>
+<h3>3.1 Personalized (interest-based) ads</h3>
+<table><tbody>
+<tr><th>Data</th><td>Advertising identifier (Android advertising ID), ad interactions, in-app context</td></tr>
+<tr><th>How it is collected</th><td>Sent automatically to Google when Google AdMob in the app requests and shows an ad. We do not receive it</td></tr>
+<tr><th>Purpose</th><td>Google showing ads matched to interests (on Android, depending on your consent choice and device settings)</td></tr>
+<tr><th>Who</th><td>The app does not ask your age, so it does not treat users differently by age. The iOS version does not obtain the IDFA</td></tr>
+<tr><th>Retention</th><td>Per Google's policy (<a href="https://policies.google.com/technologies/retention">How Google retains data</a>)</td></tr>
+<tr><th>How to opt out</th><td>"Privacy Options" at the bottom of the Shop (in regions where it appears), or reset/delete your advertising ID or turn off personalized ads in device settings (section 9)</td></tr>
+</tbody></table>
+<!-- 변호사 확인: 한국어 판 3.1 주석과 같다 (PIPC 맞춤형 광고 가이드라인의 공개 항목, 나이를 모르는 앱의 「대상」 칸, 비맞춤 광고 요청을 코드에 넣을지). -->
+
+<h2>4. In-app purchases</h2>
+<ul>
+<li><strong>What we sell:</strong> Four items you own for good — the Starter Pack (1,500 Ambrosia plus a Zeus skin; can be bought once), VIP (ad rewards without watching ads), the Norse Myths Pack (6 heroes) and the Olympus Skin Set (3 looks, same powers) — and Ambrosia, an in-game currency added the moment you buy it, in packs of 600, 2,800 and 6,500. Prices are shown in the Shop in your local currency, as provided by the store.</li>
+<li><strong>Random items (draws):</strong> A Shrine draw spends Ambrosia to give you hero cards at random. Ambrosia can be earned in the game or bought. <strong>The odds for every hero are shown at Shrine › "View Odds" before you draw.</strong> A Myth-tier hero is guaranteed at least once within 30 draws. Norse Myths Pack heroes never appear in draws; they come only with the pack. We do not sell any item where what you get for your money is decided at random at the time of purchase.</li>
+<li><strong>Purchases by minors:</strong> Where local law lets a minor or their guardian cancel a purchase made without the guardian's consent (for example, under 19 in Korea), you can do so. Cancellations and refunds go through the store where you paid.</li>
+<li><strong>Withdrawal:</strong> Ambrosia packs, and the Ambrosia in the Starter Pack, are added the moment you buy them. Ambrosia you have already spent may not be eligible for withdrawal (in Korea, Article 17(2) of the Act on Consumer Protection in Electronic Commerce). For the other items (VIP, the Norse Myths Pack, the Olympus Skin Set and the Starter Pack's skin), withdrawal and refunds follow each store's policy and applicable law.</li>
+<li><strong>Refunds:</strong> Apple: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Google Play: <a href="https://support.google.com/googleplay/answer/2479637">Google Play refund help</a>. We hold no payment information and cannot issue refunds ourselves, but if you email us (section 14) we will explain how.</li>
+<li>Purchases that need a parent's approval (such as Apple's "Ask to Buy") are not granted until approved.</li>
+<li><strong>Restore purchases:</strong> Use "Restore Purchases" at the bottom of the Shop to get back the items you own for good. Ambrosia exists only on the device and is not restored — if you delete the app or change devices, Ambrosia you bought is lost with it.</li>
+</ul>
+<!-- 변호사 확인: 한국어 판 4절의 두 주석과 같다 (전자상거래법 제17조 청약철회 제한과 상점 고지 문구 없음, 미성년자 결제, 게임산업법 제33조 확률형 아이템 표시와 중소기업 예외, 앱 안 odds.free 문구가 사실과 다름, 일본 자금결제법·特定商取引法·景品表示法). 미국: 뽑기(loot box)에 대한 FTC·주법 표시 요구. -->
+
+<h2>5. Leaderboards</h2>
+<p>The mythological figures on the rankings screen are fixed records built into the game, not real players. The only leaderboards with real players are Game Center on iOS (1.2). There is no free text or chat. To delete your record from a Game Center leaderboard, email us (section 14). We will ask for what we need to identify it (such as the name shown in Game Center and which leaderboard) and delete it with App Store Connect's management tools.</p>
+
+<h2>6. Friend challenge codes and the clipboard</h2>
+<ul>
+<li>"Copy Challenge" on the results screen copies a 12-character code to your device's clipboard. The code contains only <strong>a run number (which fixes the summon order), mode, map, stage and score</strong>, plus one check character to catch typos. It contains no name, device information or identifier.</li>
+<li>You decide whether and how to pass the code to a friend. The app doesn't send the code anywhere.</li>
+<li>The clipboard is read only when you tap "Paste" on the challenge entry screen; the app keeps only characters used in codes, up to 12, and discards the rest. iOS may ask you to allow pasting. Codes are entered with a fixed letter pad only; there is no free text input.</li>
+</ul>
+
+<h2>7. Vibration, notifications and device permissions</h2>
+<ul>
+<li><strong>Vibration:</strong> On iPhone, short haptics play at moments such as merges and bosses. The app reads the iOS "Reduce Motion" setting on the device to tone down screen shake. The Android version does not vibrate.</li>
+<li><strong>Notifications:</strong> The app sends no notifications.</li>
+<li><strong>Permissions:</strong> The app doesn't request camera, microphone, location, photos or contacts. On iOS it does not show the tracking (ATT) prompt. The Android version uses the internet permission to send the engine statistics in 1.3, the TikTok measurement information in 1.4 and the ad information in 1.5, and to talk to the store for purchases (1.6). The Android version has permissions to read the advertising ID (AD_ID — used for 1.4 and 1.5) and the Google Play install referrer (used only for 1.4), and the Google Play billing permission (1.6).</li>
+</ul>
+
+<h2>8. Sharing and international transfers</h2>
+<p>We do not sell your personal information or hand it to other companies. However, features from the companies below, built into the app, receive information <strong>directly and outside Korea</strong> while you use the app. Under Article 28-8 of Korea's Personal Information Protection Act, we disclose the following.</p>
+<table><thead><tr><th></th><th>Unity Technologies</th><th>Apple Inc. <small>(only on iPhone/iPad when signed in to Game Center)</small></th></tr></thead><tbody>
+<tr><th>Recipient · contact</th><td>Unity Technologies (Unity Software Inc. and affiliates) · contact via the <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a></td><td>Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA · <a href="https://www.apple.com/legal/privacy/contact/">Apple privacy contact</a></td></tr>
+<tr><th>Countries</th><td>United States and other countries where Unity operates servers</td><td>United States and other countries where Apple operates servers</td></tr>
+<tr><th>When · how</th><td>When the app runs; sent by the engine over an encrypted connection</td><td>When Game Center connects and when a run ends with a new best record; sent by iOS (GameKit) over an encrypted connection</td></tr>
+<tr><th>Items</th><td>The information in 1.3 (device specs, IP address)</td><td>The information in 1.2 (best records and scores per leaderboard). Your Game Center account is the one Apple already holds</td></tr>
+<tr><th>Purpose</th><td>Understanding the engine's device environment and improving the engine</td><td>Providing Game Center leaderboards</td></tr>
+<tr><th>Retention</th><td>Per Unity's policy (<a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity privacy policy</a>)</td><td>Per Apple's policy (<a href="https://www.apple.com/legal/privacy/">Apple privacy policy</a>); leaderboard records until you ask for deletion</td></tr>
+<tr><th>How to refuse · effect</th><td>Because this transmission is built into the engine it can't be turned off in the app; if you don't want it, you can delete the app.</td><td>If you don't sign in to Game Center, or sign out in iOS Settings, nothing is sent and you can keep playing. You can ask by email to delete records already posted.</td></tr>
+</tbody></table>
+
+<p><strong>Google — ads (1.5)</strong></p>
+<!-- 변호사 확인(1.2.0 AdMob): 한국어 판 8절의 Google 주석과 같다 (위탁/제공, 제28조의8 근거, 계약 법인 Google LLC / Google Asia Pacific, 한국에서 동의 창 없이 전송 시작, 거부 방법이 사실상 앱 삭제). -->
+<table><thead><tr><th></th><th>Google LLC</th></tr></thead><tbody>
+<tr><th>Recipient · contact</th><td>Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA · contact via <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+<tr><th>Countries</th><td>United States and other countries where Google operates servers</td></tr>
+<tr><th>When · how</th><td>From app start and from time to time while you use the app; sent by the in-app SDK over an encrypted connection</td></tr>
+<tr><th>Items</th><td>The information in 1.5 (IP address and approximate location, device and advertising identifiers, ad interactions, diagnostic information)</td></tr>
+<tr><th>Purpose</th><td>Ad delivery, measurement and fraud prevention; consent management; personalized ads (on Android, depending on your consent choice and device settings)</td></tr>
+<tr><th>Retention</th><td>Per Google's policy (<a href="https://policies.google.com/technologies/retention">retention</a>)</td></tr>
+<tr><th>How to refuse · effect</th><td>You can turn off personalized ads via "Privacy Options" at the bottom of the Shop (where shown) or device settings (such as deleting your advertising ID) and keep playing. No ad plays unless you tap an ad button, but to stop the transfers needed to prepare ads altogether, you would need to delete the app.</td></tr>
+</tbody></table>
+
+<p><strong>Android version — ad measurement by TikTok (1.4)</strong></p>
+<!-- 변호사 확인(11-11 TikTok): 한국 광고주의 TikTok 계약 법인(TikTok Pte. Ltd. 로 적음)과 서버 국가. 광고 ID 를 TikTok 에 주는 것이 제공인지 위탁인지. 앱은 전체이용가·나이를 묻지 않는데 14세 미만 이용자의 광고 ID 가 나간다 — 개인정보위 맞춤형 광고 가이드라인(14세 미만 행태정보)·COPPA·CPRA 「공유」에 비춰 동의 화면이나 끄는 스위치가 필요한지. -->
+<table><thead><tr><th></th><th>TikTok</th></tr></thead><tbody>
+<tr><th>Recipient · contact</th><td>TikTok Pte. Ltd. and affiliates (TikTok for Business) · contact via the <a href="https://www.tiktok.com/legal/page/row/privacy-policy/en">TikTok Privacy Policy</a></td></tr>
+<tr><th>Countries</th><td>Singapore, the United States and other countries where TikTok operates servers</td></tr>
+<tr><th>When · how</th><td>When the Android version runs; sent by the measurement tool over an encrypted connection</td></tr>
+<tr><th>Items</th><td>The information in 1.4 (install, launch and return facts, play-progress events, advertising ID, random identifier, install referrer, device information, IP address)</td></tr>
+<tr><th>Purpose</th><td>Measuring the results of our ads; TikTok's adjustment of ad delivery</td></tr>
+<tr><th>Retention</th><td>Per TikTok's policy (<a href="https://www.tiktok.com/legal/page/row/privacy-policy/en">TikTok Privacy Policy</a>)</td></tr>
+<tr><th>How to refuse · effect</th><td>Delete your advertising ID in Android Settings › Privacy › Ads (menu names vary a little by device) and the advertising ID will not be sent. To stop sending install and launch facts as well, delete the app. You can keep playing either way.</td></tr>
+</tbody></table>
+<p>In-app purchases (1.6) are transactions you make directly with the store using your own Apple or Google account. We hold no payment information, so we pass no personal information to the stores.</p>
+
+<h2>9. Your rights and how to use them</h2>
+<ul>
+<li><strong>Privacy options:</strong> In regions where Google's consent tool (UMP) requires it, "Privacy Options" appears at the bottom of the Shop, where you can change your ad consent.</li>
+<li><strong>Device ad settings:</strong> On Android, use "Ads" in device settings (Privacy › Ads, or Google › Ads; menu names vary a little by device) to reset or delete your advertising ID. Once deleted, the advertising ID is sent neither for the TikTok measurement in 1.4 nor for the Google ads in 1.5. On iOS, this app does not use the IDFA.</li>
+<li><strong>Delete the app:</strong> Everything on the device (game progress and records, what you own, transaction IDs) is deleted with the app. Items you own for good can be brought back with "Restore Purchases" after reinstalling, but Ambrosia does not come back (section 4). Scores posted to Game Center remain with Apple even after you delete the app.</li>
+<li><strong>Game Center:</strong> You can sign out or change your visibility in iOS Settings › Game Center. You can ask by email to delete leaderboard records, as in section 5.</li>
+<li><strong>Access, correction, deletion, restriction:</strong> Email us (section 14) and we will act without delay. The only information we hold directly is your email to us; for information held by Unity, Apple, Google or TikTok, we will point you to those companies or act within what we can do (such as deleting leaderboard records).</li>
+<li>A parent or guardian may exercise these rights on behalf of a child.</li>
+</ul>
+
+<h2>10. Retention and deletion</h2>
+<ul>
+<li>Information on the device (1.1): until you delete the app, which destroys it. Only the 64 most recent transaction IDs are kept; older ones are dropped first.</li>
+<li>Information received by Unity, Apple, Google or TikTok: for the periods in the tables in section 8.</li>
+<li>Payment records: kept by the Apple and Google stores under their own policies. We do not hold them.</li>
+<li>Emails to us: deleted without delay once handled, unless the law requires us to keep them, in which case they are kept separately for that period only.</li>
+<li>Deletion is done so that electronic files cannot be recovered.</li>
+</ul>
+
+<h2>11. Security</h2>
+<ul>
+<li>We have no servers and do not collect user information, keeping what we hold to a minimum.</li>
+<li>The engine statistics, Google ads, TikTok measurement, Game Center and store purchase communications use encrypted connections.</li>
+<li>Emails to us are managed by our privacy officer.</li>
+</ul>
+
+<h2>12. What we don't do</h2>
+<ul><li>No sign-up or login (Game Center uses your Apple account, not an account with us)</li><li>No banner ads or interstitial ads — the only ads are rewarded ads that play when you tap a button (section 3)</li><li>The iPhone and iPad version does not use the IDFA or show an ATT prompt (the Android version's advertising ID is used for the TikTok measurement in 1.4 and the Google ads in 1.5)</li><li>No separate analytics or crash-reporting tool added by us (the engine's device statistics are in 1.3; the Android version's ad measurement and play-progress events are in 1.4; ads are in 1.5)</li><li>No company servers · we never receive card details or receipts</li><li>No location permission, contacts, camera, microphone or photos (the approximate location Google derives from your IP address is in 1.5)</li><li>No notifications</li><li>No selling of personal information</li><li>No free-text input or chat</li><li>No items where what you get for your money is decided at random at purchase (Shrine draws with Ambrosia, and their odds, are in section 4)</li></ul>
+
+<h2>13. Region-specific information</h2>
+<h3>13.1 Korea</h3>
+<p>For help with privacy violations in Korea, you can contact the Personal Information Infringement Report Center (118, <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>), the Personal Information Dispute Mediation Committee (1833-6972, <a href="https://www.kopico.go.kr">kopico.go.kr</a>), the Supreme Prosecutors' Office (1301, <a href="https://www.spo.go.kr">spo.go.kr</a>) or the Korean National Police Agency (182, <a href="https://ecrm.police.go.kr">ecrm.police.go.kr</a>).</p>
+<h3>13.2 Japan</h3>
+<p>The items to be published under the external transmission rules of Japan's Telecommunications Business Act (information sent, recipients, purposes) are the same as the tables in 1.2, 1.3, 1.4 and 1.5. They are also set out in the section 「外部送信について」 (8-2) of the Japanese version.</p>
+<h3>13.3 United States</h3>
+<ul>
+<li><strong>COPPA:</strong> We do not collect personal information directly from anyone, including children under 13. The app does not ask your age and is not primarily directed to children under 13. The only ads inside the app are Google AdMob rewarded ads that play when you tap a button, for which we request G-rated content only (1.5, section 3); the TikTok measurement in the Android version (1.4) is used to measure the results of our own ads. If you have a question or request about your child's information, email us (section 14).</li>
+<li><strong>California and other state privacy laws:</strong> We do not sell personal information for money. The Android version sends the advertising ID and app launch, play-progress event and ad interaction information to TikTok (1.4) and Google (1.5), which some state laws may treat as "sharing" for targeted advertising. You can opt out through "Privacy Options" at the bottom of the Shop (where shown) or by deleting your advertising ID in Android Settings, and you can also ask by email (section 14).</li>
+</ul>
+<!-- 변호사 확인(1.2.0 미국): 한국어 판 13.3 의 1.2.0 주석과 같다 (9+ 앱이 나이 화면·아동 처리 표시 없이 AdMob — COPPA 혼합 대상 여부, 「not primarily directed to children under 13」 문장을 써도 되는지, CPRA 16세 미만 공유 사전 동의, UMP 미국 주법 메시지 켜기). -->
+
+<h2>14. Contact · privacy officer</h2>
+<ul><li>TwoStepsAhead Inc. (Republic of Korea), business registration 319-87-03770</li><li>Privacy officer: Gunhee Kim (CEO)</li><li>Email: glenn.kim@twostepsahead.co.kr</li></ul>
+
+<h2>15. Changes</h2>
+<p>If we change this policy, we will announce it on this page before it takes effect. If we add or change features that handle information, we will update this policy before releasing that version.</p>
+<hr>
+<footer>TwoStepsAhead Inc. · Random Myth Defense</footer>
+</main>
+</html>
