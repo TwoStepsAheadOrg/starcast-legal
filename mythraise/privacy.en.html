@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Random Myth Idle — Privacy Policy</title>
+<style>
+:root { color-scheme: light dark; --ink:#1c1630; --dim:#5b5470; --line:#e6e1f0; --bg:#fffdfa; --accent:#6c4ad6; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#f3efff; --dim:#b3aacb; --line:#2f2947; --bg:#171227; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font: 17px/1.75 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Hiragino Sans", "Segoe UI", sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+h1 { font-size: 1.9rem; line-height:1.3; margin: 0 0 .4rem; letter-spacing:-.01em; }
+h2 { font-size: 1.18rem; margin: 2.4rem 0 .6rem; }
+h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+p, li { color: var(--ink); }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+th, td { border: 1px solid var(--line); padding: .55rem .7rem; text-align: left; vertical-align: top; }
+th { background: color-mix(in srgb, var(--accent) 8%, transparent); font-weight: 700; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+a { color: var(--accent); }
+ul { padding-left: 1.2rem; }
+nav { font-size:.9rem; margin-bottom:2rem; }
+nav a { margin-right: .8rem; }
+footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
+</style>
+<main>
+<nav><a href="./">한국어</a><a href="./privacy.en.html">English</a><a href="./privacy.ja.html">日本語</a></nav>
+<h1>Random Myth Idle — Privacy Policy</h1>
+<p>Effective: 2026-11-13</p>
+<h2>Summary</h2>
+<ul>
+<li>There is no sign-up and no login. Game progress stays on this device only. We run no server and do not receive information about you.</li>
+<li>The app shows Google AdMob rewarded ads. An ad appears only when you press a button; there are no banners and no interstitials. To prepare and serve ads, Google receives some device information directly (1.3).</li>
+<li>The app has in-app purchases. Payment is handled by the Apple and Google stores; we do not receive card details (1.4, section 4).</li>
+<li>The only random reward is one free gear chest a day. It cannot be bought, and its odds are shown in the shop (section 4).</li>
+<li>We added no analytics or crash-reporting tools of our own. The game engine (Unity) does send device-specification statistics to Unity (1.2).</li>
+</ul>
+<h2>1. Information handled and why</h2>
+<h3>1.1 Kept on the device only</h3>
+<table>
+<tr><th>What</th><th>Why</th><th>Where</th></tr>
+<tr><td>Game progress (per hero slot: hero, upgrade levels, faith, bag and equipped gear, best wave, Shadow Tower floor, number of runs, time of the last idle income)</td><td>To continue where you left off</td><td>Device (a file in the app's own storage)</td></tr>
+<tr><td>Ownership of purchased products (which of VIP, hero slots and the starter pack you own), recent transaction ids (up to 64)</td><td>To apply what you bought and never grant the same purchase twice</td><td>Device (same file)</td></tr>
+<tr><td>Ad reward record (today's date and the number of rewards taken per placement)</td><td>To keep the daily limits (section 3)</td><td>Device (same file)</td></tr>
+<tr><td>Sound volume and display language</td><td>To remember your settings</td><td>Device (app preferences)</td></tr>
+<tr><td>Ad consent status</td><td>So the consent form is not shown every time</td><td>Device (stored by Google's consent tool)</td></tr>
+</table>
+<p>We do not receive any of this on a server. Deleting the app deletes all of it. Progress does not move to a new device. One-time purchases are remembered by the store, so you can get them back with "Restore purchases" in the shop (section 4).</p>
+<h3>1.2 What Unity receives — engine device statistics</h3>
+<p>The engine this game is built with (Unity) sends device-specification statistics to Unity when the app starts. It is built into the engine, we cannot switch it off, and we do not receive this information. It does not contain your name, contact details, game progress or advertising ID.</p>
+<table>
+<tr><th>Information</th><th>Purpose</th></tr>
+<tr><td>Device model, operating system and version, CPU, GPU, memory, screen resolution, device language</td><td>For Unity to understand the devices its engine runs on and to improve the engine</td></tr>
+<tr><td>IP address (in transit)</td><td>Communication</td></tr>
+</table>
+<h3>1.3 What Google receives — ads (Google AdMob, Google UMP consent tool)</h3>
+<p>When the app starts, Google's tools inside the app check the ad consent status and preload an ad, sending the information below directly to Google. We do not receive or store it; we only see totals in the AdMob console. Ads appear on screen only when you press a button (section 3), but this communication happens even if you never watch an ad.</p>
+<table>
+<tr><th>Information</th><th>Purpose</th></tr>
+<tr><td>IP address and the approximate location derived from it (country or city level)</td><td>Ad delivery, frequency capping, fraud prevention, ad measurement, checking consent status, and (on Android, depending on your consent choice and device settings) personalized ads</td></tr>
+<tr><td>Device and advertising identifiers (Android advertising ID and app set ID, iOS identifier for vendors (IDFV), etc.)</td><td>Same as above</td></tr>
+<tr><td>Ad interactions (ads viewed, tapped, completed)</td><td>Same as above</td></tr>
+<tr><td>Diagnostics (errors and performance records of the ads SDK)</td><td>Same as above</td></tr>
+</table>
+<p>On iOS the app does not ask for App Tracking Transparency permission, so it does not receive the IDFA. On Android, Google may use the advertising ID depending on your consent choice and device settings. The app does not ask your age, so this processing is the same for everyone, and ad content is requested at rating G (general audiences) for all users (section 2). After buying VIP, ad buttons grant the reward without an ad, but communication with Google may still occur to check consent and prepare ads.</p>
+<h3>1.4 What Apple and Google handle — in-app purchases</h3>
+<p>When you buy a product, payment, billing and refunds are handled by Apple (App Store) or Google (Google Play). We do not receive your name, card number or billing address, and we do not send receipts to a server of ours (we have none). The app uses Unity's in-app purchasing library (Unity IAP) to talk to the store, and uses only the product id and transaction id the store returns, on the device (1.1). Payment information is governed by each store's privacy policy.</p>
+<h2>2. Age and children</h2>
+<p>The app does not ask your age and has no age screen. It is not primarily directed at children under 13 and is listed on Google Play for ages 13 and over. We do not receive information directly from anyone, children included. The third-party tools inside the app, however, work the same way regardless of age.</p>
+<ul>
+<li>The engine statistics in 1.2 are sent to Unity regardless of age.</li>
+<li>The ads in 1.3 do not distinguish age either. For that reason ad content is requested at rating G for everyone, and ads are shown only when the user presses a button. On iOS the IDFA is not received. On Android the advertising ID may be sent to Google; a parent can delete the advertising ID in device settings (section 7).</li>
+<li>For purchases by minors see section 4. Parents can block or require approval for a child's purchases with iOS Screen Time (in-app purchase restrictions, Ask to Buy) or Google Play purchase authentication and family settings.</li>
+</ul>
+<h2>3. Ads and behavioral information</h2>
+<p>The only ads in this app are rewarded ads, shown only when you choose one of these buttons. There are no banner ads and no interstitial ads.</p>
+<ul>
+<li>Double the idle income gathered while the app was closed (4 a day)</li>
+<li>Revive when your hero falls in a run (once per run, 5 a day)</li>
+<li>Double the faith from a run on the result screen (once per run, 8 a day)</li>
+<li>The free gear chest in the shop (1 a day)</li>
+</ul>
+<p>Ad rewards total at most 15 a day. With VIP you receive the same rewards without watching ads. The game can be played to the end without watching any ad.</p>
+<h3>3.1 Personalized advertising</h3>
+<table>
+<tr><th>Item</th><th>Details</th></tr>
+<tr><td>Behavioral information collected</td><td>Advertising identifier (Android advertising ID), ad interactions, app usage context</td></tr>
+<tr><td>How it is collected</td><td>Sent to Google automatically when Google AdMob in the app requests or shows an ad. We do not receive it</td></tr>
+<tr><td>Purpose</td><td>For Google to show ads matched to interests (on Android, depending on consent choice and device settings)</td></tr>
+<tr><td>Who</td><td>The app does not ask age and does not separate users by age. The iOS version does not receive the IDFA</td></tr>
+<tr><td>Retention</td><td>According to Google's policy (<a href="https://policies.google.com/technologies/retention">Google data retention</a>)</td></tr>
+<tr><td>How to refuse</td><td>"Privacy options" at the bottom of the shop (in regions where it is shown), or reset or delete the advertising ID or turn off personalized ads in device settings (section 7)</td></tr>
+</table>
+<h2>4. In-app purchases</h2>
+<ul>
+<li><strong>Products sold</strong>: four one-time products — Starter Pack (1,500 faith + four grade-3 gear, can be bought once), VIP Blessing (ad rewards without watching ads), Second Hero Slot, Third Hero Slot — and faith, an in-game currency added the moment you buy it, in amounts of 600, 3,300 and 7,500. Prices are shown in the shop in the local currency reported by the store.</li>
+<li><strong>Random rewards</strong>: only the free gear chest, once a day (by watching an ad, or without an ad for VIP). It cannot be bought, and its odds (grade 2 60%, grade 3 33%, grade 4 7%) are written on its row in the shop. We sell no product whose contents are decided at random, and purchased faith cannot be spent on any draw. Transformation branches and forms are not sold.</li>
+<li><strong>Cancellation of purchases by minors</strong>: under Korean civil law, if a minor (under 19) pays without the consent of a legal guardian, the minor or the guardian may cancel. Cancellation and refunds go through the store where the payment was made.</li>
+<li><strong>Withdrawal</strong>: faith products and the contents of the Starter Pack are added the moment you buy them. Faith already spent may be excluded from withdrawal under Article 17(2) of the Korean Act on Consumer Protection in Electronic Commerce. Withdrawal and refunds for the other products (VIP Blessing, hero slots) follow each store's policy and applicable law.</li>
+<li><strong>Refunds</strong>: request them from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> or from Google Play via <a href="https://support.google.com/googleplay/answer/2479637">Google Play refund help</a>. We hold no payment information and cannot refund directly, but if you write to the email in section 12 we will point you to the right place.</li>
+<li>Purchases that need a guardian's approval (such as Apple's Ask to Buy) are not granted until approved.</li>
+<li><strong>Restoring purchases</strong>: "Restore purchases" at the bottom of the shop gives back one-time products (the contents of the Starter Pack are granted only once). Faith exists only on the device and is not restored — if you delete the app or change devices, purchased faith is lost with it.</li>
+</ul>
+<h2>5. Vibration, notifications, device permissions</h2>
+<ul>
+<li>The app uses no vibration and sends no notifications.</li>
+<li>It does not request camera, microphone, location, photos or contacts. On iOS it does not show the tracking permission (ATT) prompt.</li>
+<li>The Android version uses the internet and network-state permissions to send the engine statistics in 1.2 and the ad information in 1.3 and to talk to the store for purchases (1.4). The permission to read the advertising ID (AD_ID) and the permissions added by the ads SDK (ad services, wake lock, foreground service) are used for 1.3; the Google Play billing permission is used for 1.4.</li>
+</ul>
+<h2>6. Third parties and transfers abroad</h2>
+<p>We do not sell your personal information or hand it to other companies. The functions of the companies below, which are inside the app, receive information directly outside Korea while the app is used. We give the following notice under Article 28-8 of the Korean Personal Information Protection Act.</p>
+<table>
+<tr><th>Item</th><th>Unity Technologies</th><th>Google LLC</th></tr>
+<tr><td>Recipient and contact</td><td>Unity Technologies (Unity Software Inc. and affiliates) · contact route in the <a href="https://unity.com/legal/privacy-policy">Unity Privacy Policy</a></td><td>Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA · contact route at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+<tr><td>Countries</td><td>The United States and other countries where Unity operates servers</td><td>The United States and other countries where Google operates servers</td></tr>
+<tr><td>When and how</td><td>When the app starts, sent by the engine over an encrypted network</td><td>From app start and at any time during use, sent by the SDK in the app over an encrypted network</td></tr>
+<tr><td>Items</td><td>The information in 1.2 (device specifications, IP address)</td><td>The information in 1.3 (IP address and approximate location, device and advertising identifiers, ad interactions, diagnostics)</td></tr>
+<tr><td>Purpose</td><td>Understanding engine environments, improving the engine</td><td>Ad delivery, measurement, fraud prevention, consent management, and (on Android, depending on consent choice and device settings) personalized ads</td></tr>
+<tr><td>Retention</td><td>According to Unity's policy</td><td>According to Google's policy (<a href="https://policies.google.com/technologies/retention">retention</a>)</td></tr>
+<tr><td>How to refuse and effect</td><td>It is built into the engine and cannot be switched off in the app; if you do not want it, delete the app</td><td>Personalized ads can be turned off with "Privacy options" at the bottom of the shop (where shown) or in device settings (deleting the advertising ID, etc.), and the game still works. To stop the transmission needed to prepare ads altogether, the app must be deleted</td></tr>
+</table>
+<p>In-app purchases (1.4) are transactions you make directly with the store using your own Apple or Google account. We hold no payment information, so we pass no personal information to the stores.</p>
+<h2>7. Your rights and how to use them</h2>
+<ul>
+<li><strong>Privacy options</strong>: in regions where Google's consent tool (UMP) requires it, "Privacy options" appears at the bottom of the shop, where you can change your ad consent.</li>
+<li><strong>Device ad settings</strong>: on Android you can reset or delete the advertising ID under "Ads" in device settings (Privacy › Ads or Google › Ads; menu names differ slightly by device). On iOS this app does not use the IDFA.</li>
+<li><strong>Deleting the app</strong>: all information on the device (progress, product ownership, transaction ids) is erased when you delete the app. One-time products can be recovered with "Restore purchases" after reinstalling, but faith does not come back (section 4).</li>
+<li><strong>Requests to access, correct, delete or stop processing</strong>: write to the email in section 12 and we will respond without delay. The only information we hold ourselves is the email you send us; for information held by Unity, Google or Apple we will direct you to each company.</li>
+<li>A legal guardian may exercise these rights on behalf of a child.</li>
+</ul>
+<h2>8. Retention and deletion</h2>
+<ul>
+<li>Information on the device (1.1): until the app is deleted. Only the 64 most recent transaction ids are kept; older ones are removed first.</li>
+<li>Information received by Unity and Google: as in the table in section 6.</li>
+<li>Payment records: kept by the Apple and Google stores under their own policies. We do not hold them.</li>
+<li>Inquiry emails: deleted without delay once handled, unless a law requires them to be kept, and then only for that period.</li>
+<li>Electronic files are destroyed in a way that cannot be recovered.</li>
+</ul>
+<h2>9. Security measures</h2>
+<ul>
+<li>We run no server and collect no user information, keeping what we hold to a minimum.</li>
+<li>Engine statistics, Google ads and store payment traffic use encrypted connections.</li>
+<li>Inquiry emails are managed by the privacy officer.</li>
+</ul>
+<h2>10. What we do not do</h2>
+<ul>
+<li>No sign-up or login</li>
+<li>No banner or interstitial ads — only rewarded ads shown when the user presses a button (section 3)</li>
+<li>The iPhone and iPad version does not use the IDFA and makes no ATT request</li>
+<li>No analytics or crash-reporting tools added by us (engine device statistics are in 1.2, ads in 1.3)</li>
+<li>No company server · we receive no card details and no receipts</li>
+<li>No use of location permission, contacts, camera, microphone or photos (the approximate location Google derives from the IP address is in 1.3)</li>
+<li>No notifications · no sale of personal information</li>
+<li>No free text input, chat, online leaderboards or matches against other users (Shadow Tower opponents are built into the game)</li>
+<li>No product whose contents are decided at random when bought (section 4)</li>
+</ul>
+<h2>11. Country-specific notices</h2>
+<h3>11.1 Korea</h3>
+<p>For advice or remedies regarding privacy infringement you may contact:</p>
+<ul>
+<li>Personal Information Infringement Report Center (118, privacy.kisa.or.kr)</li>
+<li>Personal Information Dispute Mediation Committee (1833-6972, kopico.go.kr)</li>
+<li>Supreme Prosecutors' Office (1301, spo.go.kr) · National Police Agency (182, ecrm.police.go.kr)</li>
+</ul>
+<h3>11.2 Japan</h3>
+<p>The items to be published under the external transmission rules of the Telecommunications Business Act (information sent, recipients, purposes) are the tables in 1.2 and 1.3. They are also set out in the "外部送信について" section (11.2) of the Japanese version.</p>
+<h3>11.3 United States</h3>
+<ul>
+<li>COPPA: we do not collect personal information directly from anyone, including children under 13. The app does not ask age and is not primarily directed at children under 13. The only in-app ads are Google AdMob rewarded ads shown when the user presses a button, requested at rating G only (1.3, section 3). If you have a question or request about your child's information, contact the email in section 12.</li>
+<li>California and other state privacy laws: we do not sell personal information for money. The Android version sends the advertising ID and ad interaction information to Google (1.3), which some state laws may treat as "sharing" for targeted advertising. It stops if you opt out with "Privacy options" at the bottom of the shop (where shown) or delete the advertising ID in Android settings, and you can also ask us at the email in section 12.</li>
+</ul>
+<h2>12. Contact · privacy officer</h2>
+<ul>
+<li>Company: TwoStepsAhead Inc. (주식회사 투스텝스어헤드) · Business registration no. 319-87-03770</li>
+<li>Privacy officer: Gunhee Kim (CEO)</li>
+<li>Email: <a href="mailto:glenn.kim@twostepsahead.co.kr">glenn.kim@twostepsahead.co.kr</a></li>
+</ul>
+<h2>13. Changes</h2>
+<p>If we change this policy we will announce it on this page before it takes effect. If we add or change a function that handles information, we will update this policy before releasing that version.</p>
+<footer>TwoStepsAhead Inc. · Random Myth Idle</footer>
+</main>
+</html>
