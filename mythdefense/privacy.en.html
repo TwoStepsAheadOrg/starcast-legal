@@ -35,7 +35,7 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 <main>
 <nav><a href="./">한국어</a><a href="./privacy.en.html">English</a><a href="./privacy.ja.html">日本語</a></nav>
 <h1>Random Myth Defense: Merge TD Privacy Policy</h1>
-<p>Effective: 2026-10-14 · Revised: 2026-11-12 (ad measurement by TikTok in the Android version — 1.4) · Revised: 2026-11-12 (1.2.0 — ads and in-app purchases)</p>
+<p>Effective: 2026-10-14 · Revised: 2026-11-12 (ad measurement by TikTok in the Android version — 1.4) · Revised: 2026-11-12 (1.2.0 — ads and in-app purchases) · Revised: 2026-11-13 (1.2.1 — play-progress events in the Android version, 1.4)</p>
 <hr>
 <p><strong>Summary</strong></p>
 <ul>
@@ -45,8 +45,8 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 <li>From version 1.2.0 the game has <strong>in-app purchases</strong>. Payment is handled by <strong>the Apple and Google stores</strong>; we never receive your card details (1.6, section 4).</li>
 <li>Shrine draws are random. Because Ambrosia, which draws cost, can be bought, the odds for every hero are shown at Shrine › "View Odds" before you draw (section 4).</li>
 <li>On iPhone and iPad, your best scores may be posted to Apple's <strong>Game Center leaderboards</strong>. Apple handles this; we receive nothing (1.2).</li>
-<li>We haven't added any analytics or crash-reporting tools. The game engine (Unity) does send anonymous device-spec statistics to Unity (1.3).</li>
-<li>The <strong>Android version</strong> includes TikTok's ad measurement tool, which sends the fact of installs, launches and return visits, plus the device's advertising ID, to TikTok. This is to measure whether our TikTok ads lead to installs, and is separate from the ads shown inside the app (1.5) (1.4). The iPhone and iPad version does not include it.</li>
+<li>We haven't added a separate analytics or crash-reporting tool. The game engine (Unity) does send anonymous device-spec statistics to Unity (1.3), and the Android version sends a few play-progress events through TikTok's measurement tool (1.4).</li>
+<li>The <strong>Android version</strong> includes TikTok's ad measurement tool, which sends the fact of installs, launches and return visits, a few play-progress events (from 1.2.1 — first open, runs started and finished, and the like), plus the device's advertising ID, to TikTok. This is to measure whether our TikTok ads lead to installs and where people who arrive stop playing, so that we can improve the ads and the game, and is separate from the ads shown inside the app (1.5) (1.4). The iPhone and iPad version does not include it.</li>
 <li>A friend challenge code is 12 characters containing only a run number, mode, map, stage and score, and you pass it on yourself (section 6).</li>
 </ul>
 <hr>
@@ -87,11 +87,12 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 <p>We run install ads for this game on TikTok. To measure whether people who saw an ad actually installed and opened the game, the Android version includes TikTok's measurement tool (TikTok Business SDK). When the app runs, it sends the information below directly to TikTok. We do not receive it per person; we only see totals, such as the number of installs, in TikTok Ads Manager. This measurement is separate from the ads shown inside the app (Google AdMob, 1.5); TikTok does not show ads inside the app.</p>
 <table><thead><tr><th>Information</th><th>Purpose</th></tr></thead><tbody>
 <tr><td>The fact and time of an app install, launch and a return on day 2</td><td>Measuring ad results; TikTok adjusts ad delivery so ads reach people likely to install</td></tr>
+<tr><td>Play-progress events (from 1.2.1): first open; first run started; first and third run finished; second run started; each time a run ends, which wave range it reached (one of eight ranges), whether it was a normal or Hardcore run, and whether it was won; the first time the Shrine and the Shop are opened; the first rewarded ad watched to the end — and the time of each</td><td>Measuring ad results (where people who came from an ad stop playing), improving the game, TikTok adjusting ad delivery</td></tr>
 <tr><td>The device's advertising ID (Google advertising ID) and a random identifier created by the measurement tool</td><td>Linking the device that saw an ad with the device that installed</td></tr>
 <tr><td>Google Play install referrer</td><td>Seeing which ad led to an install</td></tr>
 <tr><td>Device information such as model, operating system, language and network type; app version; IP address</td><td>Measurement and communication</td></tr>
 </tbody></table>
-<p>Game progress, scores, on-screen text and payment information are not sent (we turned off the features that send screen content and track purchases automatically). The app has no names or contact details to send.</p>
+<p>Apart from the play-progress events in the table above, game progress is not sent. Scores, run numbers, the heroes and currency you own, on-screen text, payment information and the fact of a purchase are not sent (we turned off the features that send screen content and track purchases automatically). A play-progress event is only a label and three small numbers (wave range, mode, win or loss), but it is transmitted together with the advertising ID and random identifier in the same table. The app has no names or contact details to send. The iPhone and iPad version does not send these events.</p>
 
 <h3>1.5 Received by Google — ads (Google AdMob, consent via Google UMP; from version 1.2.0)</h3>
 <p>When the app starts, Google's tools built into the app send the following <strong>directly to Google</strong> to check ad consent status and load ads in advance. We do not receive or store this information ourselves. An ad appears on screen only when you tap a button (section 3), but this communication happens even if you never watch an ad.</p>
@@ -198,7 +199,7 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 <tr><th>Recipient · contact</th><td>TikTok Pte. Ltd. and affiliates (TikTok for Business) · contact via the <a href="https://www.tiktok.com/legal/page/row/privacy-policy/en">TikTok Privacy Policy</a></td></tr>
 <tr><th>Countries</th><td>Singapore, the United States and other countries where TikTok operates servers</td></tr>
 <tr><th>When · how</th><td>When the Android version runs; sent by the measurement tool over an encrypted connection</td></tr>
-<tr><th>Items</th><td>The information in 1.4 (install, launch and return facts, advertising ID, random identifier, install referrer, device information, IP address)</td></tr>
+<tr><th>Items</th><td>The information in 1.4 (install, launch and return facts, play-progress events, advertising ID, random identifier, install referrer, device information, IP address)</td></tr>
 <tr><th>Purpose</th><td>Measuring the results of our ads; TikTok's adjustment of ad delivery</td></tr>
 <tr><th>Retention</th><td>Per TikTok's policy (<a href="https://www.tiktok.com/legal/page/row/privacy-policy/en">TikTok Privacy Policy</a>)</td></tr>
 <tr><th>How to refuse · effect</th><td>Delete your advertising ID in Android Settings › Privacy › Ads (menu names vary a little by device) and the advertising ID will not be sent. To stop sending install and launch facts as well, delete the app. You can keep playing either way.</td></tr>
@@ -232,7 +233,7 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 </ul>
 
 <h2>12. What we don't do</h2>
-<ul><li>No sign-up or login (Game Center uses your Apple account, not an account with us)</li><li>No banner ads or interstitial ads — the only ads are rewarded ads that play when you tap a button (section 3)</li><li>The iPhone and iPad version does not use the IDFA or show an ATT prompt (the Android version's advertising ID is used for the TikTok measurement in 1.4 and the Google ads in 1.5)</li><li>No analytics or crash-reporting tools added by us (the engine's device statistics are in 1.3; ad measurement is in 1.4; ads are in 1.5)</li><li>No company servers · we never receive card details or receipts</li><li>No location permission, contacts, camera, microphone or photos (the approximate location Google derives from your IP address is in 1.5)</li><li>No notifications</li><li>No selling of personal information</li><li>No free-text input or chat</li><li>No items where what you get for your money is decided at random at purchase (Shrine draws with Ambrosia, and their odds, are in section 4)</li></ul>
+<ul><li>No sign-up or login (Game Center uses your Apple account, not an account with us)</li><li>No banner ads or interstitial ads — the only ads are rewarded ads that play when you tap a button (section 3)</li><li>The iPhone and iPad version does not use the IDFA or show an ATT prompt (the Android version's advertising ID is used for the TikTok measurement in 1.4 and the Google ads in 1.5)</li><li>No separate analytics or crash-reporting tool added by us (the engine's device statistics are in 1.3; the Android version's ad measurement and play-progress events are in 1.4; ads are in 1.5)</li><li>No company servers · we never receive card details or receipts</li><li>No location permission, contacts, camera, microphone or photos (the approximate location Google derives from your IP address is in 1.5)</li><li>No notifications</li><li>No selling of personal information</li><li>No free-text input or chat</li><li>No items where what you get for your money is decided at random at purchase (Shrine draws with Ambrosia, and their odds, are in section 4)</li></ul>
 
 <h2>13. Region-specific information</h2>
 <h3>13.1 Korea</h3>
@@ -242,7 +243,7 @@ footer { margin-top:3rem; color:var(--dim); font-size:.85rem; }
 <h3>13.3 United States</h3>
 <ul>
 <li><strong>COPPA:</strong> We do not collect personal information directly from anyone, including children under 13. The app does not ask your age and is not primarily directed to children under 13. The only ads inside the app are Google AdMob rewarded ads that play when you tap a button, for which we request G-rated content only (1.5, section 3); the TikTok measurement in the Android version (1.4) is used to measure the results of our own ads. If you have a question or request about your child's information, email us (section 14).</li>
-<li><strong>California and other state privacy laws:</strong> We do not sell personal information for money. The Android version sends the advertising ID and app launch and ad interaction information to TikTok (1.4) and Google (1.5), which some state laws may treat as "sharing" for targeted advertising. You can opt out through "Privacy Options" at the bottom of the Shop (where shown) or by deleting your advertising ID in Android Settings, and you can also ask by email (section 14).</li>
+<li><strong>California and other state privacy laws:</strong> We do not sell personal information for money. The Android version sends the advertising ID and app launch, play-progress event and ad interaction information to TikTok (1.4) and Google (1.5), which some state laws may treat as "sharing" for targeted advertising. You can opt out through "Privacy Options" at the bottom of the Shop (where shown) or by deleting your advertising ID in Android Settings, and you can also ask by email (section 14).</li>
 </ul>
 <!-- 변호사 확인(1.2.0 미국): 한국어 판 13.3 의 1.2.0 주석과 같다 (9+ 앱이 나이 화면·아동 처리 표시 없이 AdMob — COPPA 혼합 대상 여부, 「not primarily directed to children under 13」 문장을 써도 되는지, CPRA 16세 미만 공유 사전 동의, UMP 미국 주법 메시지 켜기). -->
 
